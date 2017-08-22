@@ -12,7 +12,7 @@ namespace JWAppConsole
         private static async Task MainAsync()
         {
 
-            // discover endpoints from metadata
+            //Discover endpoints from metadata
             var disco = await DiscoveryClient.GetAsync("http://localhost:5000");
             // request token
             var tokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
